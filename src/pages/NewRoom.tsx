@@ -1,4 +1,4 @@
-import userEvent from '@testing-library/user-event';
+// import userEvent from '@testing-library/user-event';
 import { FormEvent, useState } from 'react'; 
 import { Link, useHistory } from 'react-router-dom';
 
@@ -12,8 +12,8 @@ import { useAuth } from '../hooks/useAuth';
 import '../styles/auth.scss';
 
 export function NewRoom() {
-    const { user } = useAuth()
-    const history = useHistory()
+    const { user } = useAuth();
+    const history = useHistory();
     const [newRoom, setNewRoom] = useState('');
 
     async function handleCreateRoom(event: FormEvent) {
