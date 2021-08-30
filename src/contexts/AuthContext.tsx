@@ -40,7 +40,7 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
     })
 
     return () => {
-      unsubscribe();
+      unsubscribe(); // retirando o event listener 
     }
 
   }, []) // Use effect recebe 2 argumentos, o primeiro é uma função, e ela é ativada sempre que o segundo argumento (que sempre será um array, com elementos ou vazio) receber uma alteração durante a exibição da tela.
